@@ -129,3 +129,6 @@ STATICFILES_DIRS = (
     ('images', os.path.join(STATIC_ROOT, 'images').replace('\\', '/')),
     # ('upload', os.path.join(STATIC_ROOT, 'upload').replace('\\', '/')),
 )
+
+ROOT_STATIC_PATH = os.path.join(STATIC_ROOT, "root_static")
+ROOT_STATIC_IMAGES = os.path.join(ROOT_STATIC_PATH, "images")

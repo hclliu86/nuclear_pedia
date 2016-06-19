@@ -13,6 +13,7 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
+from nuclear_pedia import settings
 from django.conf.urls import url
 from django.contrib import admin
 from wm import views as wm_views
@@ -20,4 +21,5 @@ from wm import views as wm_views
 urlpatterns = [
     url(r'^wm/$', wm_views.homepage),
     url(r'^admin/', admin.site.urls),
+    url(r'^root_images/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.ROOT_STATIC_IMAGES})
 ]

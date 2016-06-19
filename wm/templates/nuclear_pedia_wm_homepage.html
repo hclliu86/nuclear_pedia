@@ -5,14 +5,19 @@
 {% endblock %}
 
 {% block content %}
-    {% include 'wm_logo_region.html' %}
-    {% include 'wm_nav.html' %}
-    {% include 'wm_side_bar_homepage.html' %}
+{% include 'wm_logo_region.html' %}
+{% include 'wm_nav.html' %}
+{% include 'wm_side_bar_homepage.html' %}
 
 
-    <div class="content min_height_with_content">
-        <p>页面正文</p>
-    </div>
+<div class="content min_height_with_content">
+    <h1>放射性废物</h1>
+    <p>放射性废物是指...</p>
+    <h2>放射性固体废物</h2>
+    <p></p>
+    <h2>放射性液体废物</h2>
+    <h3>放射性气体废物</h3>
+</div>
 
-    {% include 'wm_footer.html' %}
+{% include 'wm_footer.html' %}
 {% endblock %}
