@@ -1,0 +1,48 @@
+<head>
+    <style>
+        .side_bar {
+            float: left;
+            position: relative;
+            width: 15%;
+            border: transparent;
+            background: white;
+            color: #0b1af0;
+            padding: 2em;
+        }
+        .side_bar_ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 75%;
+{#            background-color: #98bf21;#}
+            border: solid transparent;
+            overflow: hidden;
+        }
+        .side_bar_ul a:link, a:visited {
+            display: block;
+            width: 120px;
+            font-weight: bold;
+            color: blue;
+{#            background-color: #98bf21;#}
+            text-align: center;
+            padding:4px;
+            margin: 8px 0;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        .side_bar_ul a:hover, a:active {
+            background-color: #7A991A;
+        }
+    </style>
+</head>
+<div class="side_bar min_height_with_content">
+    {% block side_bar %}
+        <ul class="side_bar_ul">
+            <li><a href="#tag1">标签一</a> </li>
+            <li><a href="#tag2">标签二</a> </li>
+            <li><a href="#tag3">标签三</a> </li>
+            <li><a href="#tag4">标签四</a> </li>
+        </ul>
+    {% endblock %}
+</div>
+

@@ -1,0 +1,16 @@
+body {
+    width: 80%;
+    margin: 0 10%;
+    padding: 0;
+    border: 0;
+    background: lightyellow;
+}
+
+.content {
+    width: 70%;
+    padding: 2em;
+}
+
+.min_height_with_content {
+    min-height: 580px;
+}
